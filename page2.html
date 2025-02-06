@@ -57,7 +57,10 @@
 
     <script>
         function redirectToWhatsApp() {
-            window.location.href = "https://wa.me/917838436468";
+            const phoneNumber = "917838436468"; 
+            const message = "yess ofcc"; 
+            const encodedMessage = encodeURIComponent(message);
+            window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
         }
 
         function goToPage3() {
